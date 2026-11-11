@@ -1,0 +1,15 @@
+provider: esimgo
+apis_io: https://apis.io/providers/esimgo/
+context: iot-connectivity
+generated: '2026-11-11'
+concepts:
+  sim:
+    path_segment:
+    - esims
+    properties:
+      iccid: iccid
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/esimgo-openapi.yml#GET /esims
+    - openapi/_original/esimgo-openapi.yml#GET /esims/{iccid}
+    - openapi/_original/esimgo-openapi.yml#PUT /esims

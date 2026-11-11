@@ -1,0 +1,31 @@
+provider: onomondo
+apis_io: https://apis.io/providers/onomondo/
+context: iot-connectivity
+generated: '2026-11-11'
+concepts:
+  sim:
+    path_segment:
+    - sims
+    properties:
+      iccid: iccid
+      id: id
+      imei_lock: imei_lock
+      name: label
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/onomondo-openapi.yml#GET /sims
+    - openapi/_original/onomondo-openapi.yml#GET /sims/{sim_id}
+    - openapi/_original/onomondo-openapi.yml#PATCH /sims/bulk
+    - openapi/_original/onomondo-openapi.yml#PATCH /sims/{sim_id}
+  data_usage:
+    path_segment:
+    - usage
+    properties:
+      id: sim_id
+      data_used: bytes
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/onomondo-openapi.yml#GET /sms/usage/
+    - openapi/_original/onomondo-openapi.yml#GET /sms/usage/{sim_id}
+    - openapi/_original/onomondo-openapi.yml#GET /usage
+    - openapi/_original/onomondo-openapi.yml#GET /usage/{sim_id}

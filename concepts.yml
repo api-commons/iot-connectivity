@@ -1,0 +1,43 @@
+context: iot-connectivity
+name: IoT Connectivity and SIMs
+intro: >-
+  The common IoT-connectivity vocabulary -- SIM cards and eSIM profiles, their data usage, and the
+  connectivity plans they are on -- distilled from the APIs that already exist.
+tags: [Connectivity, IoT Connectivity, eSIM, SIM, Cellular IoT, Mobile Data, Travel eSIM, MVNO]
+envelope: [_links, _pagination, _results, data, success, errors, count, total, page, meta, links, result, results, value, next, previous, has_more, message, total_count, object]
+common_fields:
+  id: [uuid, guid, external_id, sim_id, esim_id]
+  created_at: [created, created_date, create_time, activated_at, activation_date]
+  updated_at: [updated, modified_at, update_time, last_seen]
+  status: [state, sim_status]
+  name: [title, display_name, label, nickname]
+concepts:
+  sim:
+    segments: [sims, sim, esims, esim, sim_cards, simcards, profiles@esim|sims|esims, devices@connectivity|iot|sims]
+    aliases:
+      iccid: [iccid_number]
+      imsi: [imsis]
+      msisdn: [phone_number, number, msisdns]
+      plan: [plan_id, rate_plan, data_plan, package, bundle]
+  data_usage:
+    path: /data-usage
+    requires: [sim]
+    segments: [usage, usages, data_usage, consumption, sessions@sims|sim|esims]
+    aliases:
+      data_used: [data, bytes, volume, used, data_used_bytes, total_bytes, used_data]
+      period_start: [start, start_date, from]
+      period_end: [end, end_date, to]
+  # connectivity_plan was measured and dropped: 9 readable providers agree only on id.
+
+findings:
+  - >-
+    SIMs agree on iccid, status, id and imsi: the ICCID is the key every connectivity platform shares,
+    because it is printed on the card and burned into the eSIM profile.
+  - >-
+    Data usage agrees on id and data_used; the unit (bytes, MB, KB) is fixed per provider and is
+    not stated in the field.
+decisions:
+  - >-
+    iccid is kept as a property in its own right, not mapped to id, because most platforms carry both.
+  - >-
+    Connectivity plans were dropped: a plan is a commercial bundle shaped by each provider.

@@ -1,0 +1,990 @@
+{
+ "cohort_size": 35,
+ "unreadable": [
+  {
+   "spec": "aeris/openapi/_original/aeris-watchtower-api-openapi-openapi.yaml",
+   "error": "did not find expected <document start>"
+  }
+ ],
+ "concepts": {
+  "sim": {
+   "1nce": {
+    "segments": [
+     "sims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "iccid": "string",
+     "iccid_with_luhn": "string",
+     "imsi": "string",
+     "imsi_2": "string",
+     "current_imsi": "string",
+     "msisdn": "string",
+     "imei": "string",
+     "imei_lock": "boolean",
+     "status": "string",
+     "activation_date": "string",
+     "ip_address": "string",
+     "current_quota": "number",
+     "quota_status": "object",
+     "current_quota_SMS": "number",
+     "quota_status_SMS": "object",
+     "label": "string"
+    },
+    "evidence": [
+     "openapi/_original/1nce-sim-management-openapi.yml#GET /v1/sims",
+     "openapi/_original/1nce-sim-management-openapi.yml#GET /v1/sims/{iccid}",
+     "openapi/_original/1nce-sim-management-openapi.yml#POST /v1/sims",
+     "openapi/_original/1nce-sim-management-openapi.yml#PUT /v1/sims/{iccid}",
+     "openapi/_original/1nce-sim-management-v2-openapi.yml#GET /v2/sims",
+     "openapi/_original/1nce-sim-management-v2-openapi.yml#GET /v2/sims/{iccid}",
+     "openapi/_original/1nce-sim-management-v2-openapi.yml#PUT /v2/sims/{iccid}"
+    ]
+   },
+   "aeris": {
+    "segments": [
+     "sims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "fixed_ips": "array",
+     "access_control_class": "string",
+     "apns": "array",
+     "assigned_imei": "string",
+     "charge_code_for_pp_move": "boolean",
+     "charge_code_non_pp_move": "boolean",
+     "clip": "boolean",
+     "consumer_connectivity": "boolean",
+     "csd": "boolean",
+     "customer_label": "string",
+     "customer_no": "string",
+     "delivery_date": "string",
+     "device_terminal_type": "string",
+     "disposal_date": "string",
+     "first_activation_date": "string",
+     "freeze_duration": "string",
+     "gprs": "boolean",
+     "icc": "string",
+     "imei": "string",
+     "imsi": "string",
+     "installation_date": "string",
+     "last_subscription_date_change": "string",
+     "move_to_permitted": "boolean",
+     "msisdn": "string",
+     "pbr_exit_date": "string",
+     "pdp_context_profile_name": "string",
+     "pin1": "string",
+     "pin2": "string",
+     "price_profile_desc": "string",
+     "price_profile_name": "string",
+     "product_offer_name": "string",
+     "puk1": "string",
+     "puk2": "string",
+     "region_short_name": "string",
+     "roam_profile_desc": "string",
+     "roam_profile_name": "string",
+     "sim_card_description": "string",
+     "sim_resource_status": "string",
+     "sim_specification": "string",
+     "sim_subscription_status": "string",
+     "site": "string",
+     "sms_mo": "boolean",
+     "sms_mt": "boolean",
+     "trigger_package": "string",
+     "voice": "boolean",
+     "lte": "boolean",
+     "user_profile_id": "string",
+     "tenant_id": "string",
+     "arp_tadig": "string",
+     "arp_assignment_time": "string",
+     "customer_name": "string",
+     "subscription_package_description": "string",
+     "operator_id": "string",
+     "enable_5g": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/subscription-inventory-common-api.yaml#GET /sims",
+     "openapi/_original/subscription-inventory-common-api.yaml#GET /sims/{id}"
+    ]
+   },
+   "airalo": {
+    "segments": [
+     "sims",
+     "esim"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "created_at": "string",
+     "iccid": "string",
+     "lpa": "string",
+     "imsis": "null",
+     "matching_id": "string",
+     "qrcode": "string",
+     "qrcode_url": "string",
+     "direct_apple_installation_url": "string",
+     "voucher_code": "null",
+     "airalo_code": "null",
+     "apn_type": "string",
+     "apn_value": "null",
+     "is_roaming": "boolean",
+     "confirmation_code": "string",
+     "order": "null",
+     "brand_settings_name": "string",
+     "simable": "object",
+     "recycled": "boolean",
+     "recycled_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/airalo-partner-api-openapi.yml#GET /v2/sims",
+     "openapi/_original/airalo-partner-api-openapi.yml#GET /v2/sims/{sim_iccid}",
+     "openapi/_original/airalo-partner-api-openapi.yml#POST /v2/voucher/esim"
+    ]
+   },
+   "emnify": {
+    "segments": [
+     "sim"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "integer",
+     "iccid": "string",
+     "eid": "string",
+     "production_date": "string",
+     "activation_date": "string",
+     "status": "object",
+     "customer_org": "object",
+     "issuer_org": "object",
+     "reseller_org": "object",
+     "endpoint": "object",
+     "imsi": "string",
+     "msisdn": "string",
+     "model": "object"
+    },
+    "evidence": [
+     "openapi/_original/emnify-openapi.yml#DELETE /api/v1/sim/{sim_id}",
+     "openapi/_original/emnify-openapi.yml#GET /api/v1/sim",
+     "openapi/_original/emnify-openapi.yml#GET /api/v1/sim/{sim_id}",
+     "openapi/_original/emnify-openapi.yml#PATCH /api/v1/sim/{sim_id}"
+    ]
+   },
+   "esimgo": {
+    "segments": [
+     "esims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT collection"
+    ],
+    "properties": {
+     "iccid": "string",
+     "matchingId": "string",
+     "smdpAddress": "string",
+     "profileStatus": "string",
+     "appleInstallUrl": "string",
+     "firstInstalledDateTime": "string",
+     "customerRef": "string",
+     "assignedDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/esimgo-openapi.yml#GET /esims",
+     "openapi/_original/esimgo-openapi.yml#GET /esims/{iccid}",
+     "openapi/_original/esimgo-openapi.yml#PUT /esims"
+    ]
+   },
+   "kore-wireless": {
+    "segments": [
+     "sims"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "sid": "string",
+     "unique_name": "string",
+     "friendly_name": "string",
+     "account_sid": "string",
+     "status": "string",
+     "rate_plan_sid": "string",
+     "iccid": "string",
+     "eid": "string",
+     "commands_callback_url": "string",
+     "commands_callback_method": "string",
+     "date_created": "string",
+     "date_updated": "string",
+     "ip_address": "string",
+     "reset_status": "string",
+     "links": "object",
+     "url": "string",
+     "voice_url": "string",
+     "voice_method": "string",
+     "voice_fallback_url": "string",
+     "voice_fallback_method": "string",
+     "sms_url": "string",
+     "sms_method": "string",
+     "sms_fallback_url": "string",
+     "sms_fallback_method": "string",
+     "fleet_sid": "string"
+    },
+    "evidence": [
+     "openapi/_original/kore-wireless-programmable-wireless.yml#DELETE /v1/Sims/{Sid}",
+     "openapi/_original/kore-wireless-programmable-wireless.yml#GET /v1/Sims",
+     "openapi/_original/kore-wireless-programmable-wireless.yml#GET /v1/Sims/{Sid}",
+     "openapi/_original/kore-wireless-programmable-wireless.yml#POST /v1/Sims/{Sid}",
+     "openapi/_original/kore-wireless-supersim.yml#GET /v1/Sims",
+     "openapi/_original/kore-wireless-supersim.yml#GET /v1/Sims/{Sid}",
+     "openapi/_original/kore-wireless-supersim.yml#POST /v1/Sims",
+     "openapi/_original/kore-wireless-supersim.yml#POST /v1/Sims/{Sid}"
+    ]
+   },
+   "maya-mobile": {
+    "segments": [
+     "esims"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "iccid": "string",
+     "status": "string",
+     "activation_code": "string",
+     "qr_code_url": "string",
+     "plan_id": "string",
+     "region": "string",
+     "country": "string"
+    },
+    "evidence": [
+     "openapi/_original/maya-mobile-openapi.yml#GET /esims/{esimId}",
+     "openapi/_original/maya-mobile-openapi.yml#POST /esims"
+    ]
+   },
+   "onomondo": {
+    "segments": [
+     "sims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "iccid": "string",
+     "label": "string",
+     "activated": "boolean",
+     "network_whitelist": "string",
+     "imei_lock": "string",
+     "connector": "string",
+     "data_limit": "object",
+     "technologies": "object",
+     "tags": "array",
+     "location": "object"
+    },
+    "evidence": [
+     "openapi/_original/onomondo-openapi.yml#GET /sims",
+     "openapi/_original/onomondo-openapi.yml#GET /sims/{sim_id}",
+     "openapi/_original/onomondo-openapi.yml#PATCH /sims/bulk",
+     "openapi/_original/onomondo-openapi.yml#PATCH /sims/{sim_id}"
+    ]
+   },
+   "soracom": {
+    "segments": [
+     "sims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "activeProfileId": "string",
+     "arcSessionStatus": "object",
+     "capabilities": "object",
+     "createdTime": "integer",
+     "expiryAction": "string",
+     "expiryTime": "integer",
+     "groupId": "string",
+     "imeiLock": "object",
+     "lastModifiedTime": "integer",
+     "lastPortMappingCreatedTime": "integer",
+     "localInfo": "object",
+     "moduleType": "string",
+     "operatorId": "string",
+     "otaSerialNumber": "string",
+     "pcapEndTime": "integer",
+     "pcapStartTime": "integer",
+     "previousSession": "object",
+     "profiles": "object",
+     "renewalFeeStatusSetTime": "integer",
+     "serialNumber": "string",
+     "sessionStatus": "object",
+     "simId": "string",
+     "speedClass": "string",
+     "status": "string",
+     "tags": "object",
+     "terminationEnabled": "boolean",
+     "testmodeExhaustedTime": "integer",
+     "type": "string",
+     "destination": "object",
+     "duration": "number",
+     "endpoint": "string",
+     "expired": "boolean",
+     "expiredTime": "integer",
+     "hostname": "string",
+     "imsi": "string",
+     "ipAddress": "string",
+     "placement": "string",
+     "port": "number",
+     "source": "object",
+     "tlsRequired": "boolean",
+     "costBreakdownList": "array",
+     "currency": "string",
+     "updatedTime": "integer",
+     "yearMonth": "string",
+     "subscription": "string",
+     "dataTrafficStatsMap": "object",
+     "date": "string",
+     "unixtime": "integer"
+    },
+    "evidence": [
+     "openapi/_original/soracom-analysis-query-api-openapi.yml#GET /query/sims",
+     "openapi/_original/soracom-napter-api-openapi.yml#GET /port_mappings/sims/{sim_id}",
+     "openapi/_original/soracom-napter-api-openapi.yml#POST /port_mappings/sims/{sim_id}",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /bills/summaries/sims",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /port_mappings/sims/{sim_id}",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /query/sims",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /sims",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /sims/{sim_id}",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /stats/air/sims/{sim_id}",
+     "openapi/_original/soracom-platform-api-openapi.yml#POST /port_mappings/sims/{sim_id}",
+     "openapi/_original/soracom-platform-api-openapi.yml#POST /sims"
+    ]
+   },
+   "truphone": {
+    "segments": [
+     "sims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "iccid": "string",
+     "label": "string",
+     "description": "string",
+     "status": "string",
+     "organization": "string"
+    },
+    "evidence": [
+     "openapi/_original/truphone-openapi.yml#GET /v2.2/sims",
+     "openapi/_original/truphone-openapi.yml#GET /v2.2/sims/{iccid}",
+     "openapi/_original/truphone-openapi.yml#PATCH /v2.2/sims/{iccid}"
+    ]
+   }
+  },
+  "data_usage": {
+   "1nce": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "cost": "string",
+     "currency": "object",
+     "traffic_type": "object",
+     "volume": "string",
+     "volume_rx": "string",
+     "volume_tx": "string"
+    },
+    "evidence": [
+     "openapi/_original/1nce-sim-management-openapi.yml#GET /v1/sims/{iccid}/usage"
+    ]
+   },
+   "aeris": {
+    "segments": [
+     "usages"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "date": "string",
+     "size": "integer"
+    },
+    "evidence": [
+     "openapi/_original/business-analytics-report-api.yaml#GET /usages",
+     "openapi/_original/business-analytics-report-api.yaml#GET /usages/{id}"
+    ]
+   },
+   "airalo": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "remaining": "integer",
+     "total": "integer",
+     "expired_at": "string",
+     "is_unlimited": "boolean",
+     "status": "string",
+     "remaining_voice": "integer",
+     "remaining_text": "integer",
+     "total_voice": "integer",
+     "total_text": "integer"
+    },
+    "evidence": [
+     "openapi/_original/airalo-partner-api-openapi.yml#GET /v2/sims/{sim_iccid}/usage"
+    ]
+   },
+   "golioth": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "dates": "object",
+     "entity": "string",
+     "unit": "string"
+    },
+    "evidence": [
+     "openapi/_original/golioth-openapi.yml#GET /v1/organizations/{organizationId}/usage"
+    ]
+   },
+   "hubble-network": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "usage_timestamp": "string",
+     "usage_type": "string",
+     "usage_value": "integer"
+    },
+    "evidence": [
+     "openapi/_original/hubble-network-openapi.yml#GET /v1/org/{org_id}/billing/usage",
+     "openapi/_original/hubble-network-platform-openapi-original.yml#GET /v1/org/{org_id}/billing/usage"
+    ]
+   },
+   "maya-mobile": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "esim_id": "string",
+     "status": "string",
+     "data_used": "number",
+     "data_remaining": "number",
+     "unit": "string"
+    },
+    "evidence": [
+     "openapi/_original/maya-mobile-openapi.yml#GET /esims/{esimId}/usage"
+    ]
+   },
+   "onomondo": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "sim_id": "string",
+     "bytes": "integer",
+     "timestamp": "string"
+    },
+    "evidence": [
+     "openapi/_original/onomondo-openapi.yml#GET /sms/usage/",
+     "openapi/_original/onomondo-openapi.yml#GET /sms/usage/{sim_id}",
+     "openapi/_original/onomondo-openapi.yml#GET /usage",
+     "openapi/_original/onomondo-openapi.yml#GET /usage/{sim_id}"
+    ]
+   },
+   "soracom": {
+    "segments": [
+     "usage",
+     "sessions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "apn": "string",
+     "cell": "object",
+     "createdTime": "string",
+     "dns0": "string",
+     "dns1": "string",
+     "event": "string",
+     "gatewayPrivateIpAddress": "string",
+     "gatewayPublicIpAddress": "string",
+     "imei": "string",
+     "imsi": "string",
+     "operatorId": "string",
+     "sessionId": "string",
+     "simId": "string",
+     "subscription": "string",
+     "time": "integer",
+     "ueIpAddress": "string",
+     "vpgId": "string",
+     "endedTime": "integer",
+     "startedTime": "integer",
+     "usage": "object",
+     "usageLimit": "object",
+     "deviceId": "string",
+     "image": "object",
+     "meteredYearMonth": "string",
+     "video": "object"
+    },
+    "evidence": [
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /sims/{sim_id}/events/sessions",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /sims/{sim_id}/testing/usage",
+     "openapi/_original/soracom-platform-api-openapi.yml#GET /sora_cam/devices/{device_id}/exports/usage"
+    ]
+   },
+   "starlink": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "errors": "array",
+     "warnings": "array",
+     "information": "array",
+     "isValid": "boolean",
+     "content": "object"
+    },
+    "evidence": [
+     "openapi/_original/starlink-public-api-v2-openapi.json#GET /public/v2/data-pools/usage"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "1nce",
+    "aeris",
+    "africastalking",
+    "airalo",
+    "amdocs",
+    "att",
+    "blues-wireless",
+    "booking-com",
+    "bookingcom",
+    "cardtonic",
+    "commscope-holding",
+    "emnify",
+    "esimgo",
+    "golioth",
+    "graphiant",
+    "gsma",
+    "holidu",
+    "hologram",
+    "hubble-network",
+    "kore-wireless",
+    "maya-mobile",
+    "mobileapi-dev",
+    "nextdc",
+    "onomondo",
+    "soracom",
+    "starlink",
+    "swisscom",
+    "tata-communications",
+    "the-things-network",
+    "truphone",
+    "zayo",
+    "zayo-group",
+    "zerotier"
+   ],
+   "kebab-case": [
+    "aeris",
+    "airalo",
+    "att",
+    "blues-wireless",
+    "booking-com",
+    "cardtonic",
+    "emnify",
+    "esimgo",
+    "golioth",
+    "graphiant",
+    "gsma",
+    "holidu",
+    "hubble-network",
+    "kore-wireless",
+    "mobileapi-dev",
+    "onomondo",
+    "starlink",
+    "the-things-network",
+    "zayo",
+    "zayo-group",
+    "zerotier"
+   ],
+   "camelCase": [
+    "1nce",
+    "aeris",
+    "africastalking",
+    "att",
+    "booking-com",
+    "golioth",
+    "graphiant",
+    "gsma",
+    "hubble-network",
+    "swisscom",
+    "tata-communications",
+    "zerotier"
+   ],
+   "snake_case": [
+    "1nce",
+    "aeris",
+    "blues-wireless",
+    "booking-com",
+    "emnify",
+    "golioth",
+    "hubble-network",
+    "kore-wireless",
+    "mobileapi-dev",
+    "soracom",
+    "the-things-network",
+    "truphone"
+   ],
+   "PascalCase": [
+    "1nce",
+    "kore-wireless",
+    "nextdc",
+    "tata-communications"
+   ],
+   "other": [
+    "1nce",
+    "aeris",
+    "hologram",
+    "mobileapi-dev"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "1nce",
+    "aeris",
+    "africastalking",
+    "airalo",
+    "amdocs",
+    "att",
+    "blues-wireless",
+    "booking-com",
+    "emnify",
+    "esimgo",
+    "golioth",
+    "graphiant",
+    "gsma",
+    "holidu",
+    "hologram",
+    "hubble-network",
+    "kore-wireless",
+    "maya-mobile",
+    "mobileapi-dev",
+    "nextdc",
+    "onomondo",
+    "soracom",
+    "starlink",
+    "swisscom",
+    "tata-communications",
+    "the-things-network",
+    "truphone",
+    "zayo",
+    "zayo-group"
+   ],
+   "camelCase": [
+    "1nce",
+    "aeris",
+    "africastalking",
+    "amdocs",
+    "att",
+    "blues-wireless",
+    "booking-com",
+    "esimgo",
+    "golioth",
+    "graphiant",
+    "gsma",
+    "holidu",
+    "soracom",
+    "starlink",
+    "swisscom",
+    "tata-communications",
+    "zayo",
+    "zayo-group"
+   ],
+   "snake_case": [
+    "1nce",
+    "aeris",
+    "airalo",
+    "blues-wireless",
+    "booking-com",
+    "emnify",
+    "graphiant",
+    "hubble-network",
+    "kore-wireless",
+    "mobileapi-dev",
+    "nextdc",
+    "soracom",
+    "the-things-network",
+    "truphone"
+   ],
+   "other": [
+    "airalo",
+    "att",
+    "golioth",
+    "gsma",
+    "the-things-network"
+   ],
+   "PascalCase": [
+    "amazon-vpn",
+    "kore-wireless"
+   ],
+   "kebab-case": [
+    "booking-com",
+    "kore-wireless"
+   ]
+  },
+  "pagination_param": {
+   "page": [
+    "1nce",
+    "aeris",
+    "airalo",
+    "amdocs",
+    "booking-com",
+    "emnify",
+    "esimgo",
+    "golioth",
+    "graphiant",
+    "gsma",
+    "kore-wireless",
+    "mobileapi-dev",
+    "nextdc",
+    "starlink",
+    "swisscom",
+    "the-things-network",
+    "truphone"
+   ],
+   "limit": [
+    "aeris",
+    "airalo",
+    "blues-wireless",
+    "golioth",
+    "graphiant",
+    "gsma",
+    "hologram",
+    "hubble-network",
+    "mobileapi-dev",
+    "onomondo",
+    "soracom",
+    "starlink",
+    "the-things-network"
+   ],
+   "page_size": [
+    "1nce",
+    "aeris",
+    "amdocs",
+    "blues-wireless",
+    "booking-com",
+    "emnify",
+    "holidu",
+    "hubble-network",
+    "kore-wireless",
+    "nextdc",
+    "tata-communications"
+   ],
+   "per_page": [
+    "1nce",
+    "aeris",
+    "emnify",
+    "esimgo",
+    "golioth",
+    "gsma",
+    "truphone"
+   ],
+   "start": [
+    "aeris",
+    "golioth",
+    "hubble-network",
+    "kore-wireless"
+   ],
+   "offset": [
+    "aeris",
+    "gsma",
+    "onomondo"
+   ],
+   "cursor": [
+    "aeris",
+    "blues-wireless",
+    "starlink"
+   ],
+   "before": [
+    "graphiant",
+    "gsma",
+    "the-things-network"
+   ],
+   "size": [
+    "aeris",
+    "swisscom"
+   ],
+   "page_token": [
+    "golioth",
+    "kore-wireless"
+   ],
+   "after": [
+    "gsma",
+    "the-things-network"
+   ],
+   "max_results": [
+    "graphiant"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "1nce",
+    "aeris",
+    "airalo",
+    "blues-wireless",
+    "booking-com",
+    "emnify",
+    "esimgo",
+    "golioth",
+    "graphiant",
+    "gsma",
+    "hologram",
+    "kore-wireless",
+    "mobileapi-dev",
+    "nextdc",
+    "soracom",
+    "starlink",
+    "tata-communications",
+    "the-things-network",
+    "truphone",
+    "zayo",
+    "zayo-group",
+    "zerotier"
+   ],
+   "camelCase": [
+    "1nce",
+    "aeris",
+    "amdocs",
+    "att",
+    "blues-wireless",
+    "booking-com",
+    "commscope-holding",
+    "emnify",
+    "esimgo",
+    "golioth",
+    "graphiant",
+    "gsma",
+    "holidu",
+    "maya-mobile",
+    "soracom",
+    "starlink",
+    "swisscom",
+    "tata-communications",
+    "zayo",
+    "zayo-group",
+    "zerotier"
+   ],
+   "snake_case": [
+    "1nce",
+    "aeris",
+    "airalo",
+    "emnify",
+    "hubble-network",
+    "kore-wireless",
+    "nextdc",
+    "onomondo",
+    "soracom",
+    "the-things-network"
+   ],
+   "kebab-case": [
+    "aeris",
+    "booking-com",
+    "kore-wireless"
+   ],
+   "PascalCase": [
+    "kore-wireless"
+   ],
+   "other": [
+    "the-things-network"
+   ]
+  },
+  "property": {
+   "lower": [
+    "1nce",
+    "aeris",
+    "airalo",
+    "emnify",
+    "esimgo",
+    "golioth",
+    "kore-wireless",
+    "maya-mobile",
+    "onomondo",
+    "soracom",
+    "starlink",
+    "truphone"
+   ],
+   "snake_case": [
+    "1nce",
+    "aeris",
+    "airalo",
+    "emnify",
+    "hubble-network",
+    "kore-wireless",
+    "maya-mobile",
+    "onomondo"
+   ],
+   "camelCase": [
+    "esimgo",
+    "soracom",
+    "starlink"
+   ],
+   "other": [
+    "1nce"
+   ]
+  }
+ }
+}

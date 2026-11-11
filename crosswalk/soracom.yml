@@ -1,0 +1,32 @@
+provider: soracom
+apis_io: https://apis.io/providers/soracom/
+context: iot-connectivity
+generated: '2026-11-11'
+concepts:
+  sim:
+    path_segment:
+    - sims
+    properties:
+      status: status
+      id: simId
+      imsi: imsi
+      imei_lock: imeiLock
+      ip_address: ipAddress
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/soracom-analysis-query-api-openapi.yml#GET /query/sims
+    - openapi/_original/soracom-napter-api-openapi.yml#GET /port_mappings/sims/{sim_id}
+    - openapi/_original/soracom-napter-api-openapi.yml#POST /port_mappings/sims/{sim_id}
+    - openapi/_original/soracom-platform-api-openapi.yml#GET /bills/summaries/sims
+    - openapi/_original/soracom-platform-api-openapi.yml#GET /port_mappings/sims/{sim_id}
+  data_usage:
+    path_segment:
+    - usage
+    - sessions
+    properties:
+      id: simId
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/soracom-platform-api-openapi.yml#GET /sims/{sim_id}/events/sessions
+    - openapi/_original/soracom-platform-api-openapi.yml#GET /sims/{sim_id}/testing/usage
+    - openapi/_original/soracom-platform-api-openapi.yml#GET /sora_cam/devices/{device_id}/exports/usage

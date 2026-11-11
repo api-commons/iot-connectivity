@@ -1,0 +1,59 @@
+context: iot-connectivity
+generated: '2026-11-11'
+adopters:
+- provider: 1nce
+  apis_io: https://apis.io/providers/1nce/
+  crosswalk: crosswalk/1nce.yml
+  concepts:
+  - data_usage
+  - sim
+- provider: aeris
+  apis_io: https://apis.io/providers/aeris/
+  crosswalk: crosswalk/aeris.yml
+  concepts:
+  - data_usage
+  - sim
+- provider: airalo
+  apis_io: https://apis.io/providers/airalo/
+  crosswalk: crosswalk/airalo.yml
+  concepts:
+  - data_usage
+  - sim
+- provider: emnify
+  apis_io: https://apis.io/providers/emnify/
+  crosswalk: crosswalk/emnify.yml
+  concepts:
+  - sim
+- provider: esimgo
+  apis_io: https://apis.io/providers/esimgo/
+  crosswalk: crosswalk/esimgo.yml
+  concepts:
+  - sim
+- provider: kore-wireless
+  apis_io: https://apis.io/providers/kore-wireless/
+  crosswalk: crosswalk/kore-wireless.yml
+  concepts:
+  - sim
+- provider: maya-mobile
+  apis_io: https://apis.io/providers/maya-mobile/
+  crosswalk: crosswalk/maya-mobile.yml
+  concepts:
+  - data_usage
+  - sim
+- provider: onomondo
+  apis_io: https://apis.io/providers/onomondo/
+  crosswalk: crosswalk/onomondo.yml
+  concepts:
+  - data_usage
+  - sim
+- provider: soracom
+  apis_io: https://apis.io/providers/soracom/
+  crosswalk: crosswalk/soracom.yml
+  concepts:
+  - data_usage
+  - sim
+- provider: truphone
+  apis_io: https://apis.io/providers/truphone/
+  crosswalk: crosswalk/truphone.yml
+  concepts:
+  - sim

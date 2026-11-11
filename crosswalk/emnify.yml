@@ -1,0 +1,21 @@
+provider: emnify
+apis_io: https://apis.io/providers/emnify/
+context: iot-connectivity
+generated: '2026-11-11'
+concepts:
+  sim:
+    path_segment:
+    - sim
+    properties:
+      iccid: iccid
+      status: status
+      id: id
+      imsi: imsi
+      created_at: activation_date
+      msisdn: msisdn
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/emnify-openapi.yml#DELETE /api/v1/sim/{sim_id}
+    - openapi/_original/emnify-openapi.yml#GET /api/v1/sim
+    - openapi/_original/emnify-openapi.yml#GET /api/v1/sim/{sim_id}
+    - openapi/_original/emnify-openapi.yml#PATCH /api/v1/sim/{sim_id}

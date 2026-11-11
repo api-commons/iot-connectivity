@@ -1,0 +1,134 @@
+openapi: 3.1.0
+info:
+  title: IoT Connectivity and SIMs (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common IoT Connectivity and SIMs interface, distilled from the harvested OpenAPI of 35 providers
+    in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /sims/{sim_id}:
+    parameters:
+    - $ref: '#/components/parameters/sim_id'
+    get:
+      operationId: getSim
+      summary: Get a sim
+      tags:
+      - Sims
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id001
+                $ref: '#/components/schemas/Sim'
+    patch:
+      operationId: updateSim
+      summary: Update a sim
+      tags:
+      - Sims
+      x-commons-tier: extended
+      x-commons-share: 0.4
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /sims:
+    get:
+      operationId: listSims
+      summary: List sims
+      tags:
+      - Sims
+      x-commons-tier: core
+      x-commons-share: 0.9
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id001
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createSim
+      summary: Create a sim
+      tags:
+      - Sims
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /data-usage:
+    get:
+      operationId: listDataUsage
+      summary: List data usage
+      tags:
+      - Data Usages
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DataUsage'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+components:
+  schemas:
+    Sim:
+      $ref: ./schema/sim.json
+    DataUsage:
+      $ref: ./schema/data_usage.json
+  parameters:
+    sim_id:
+      name: sim_id
+      in: path
+      required: true
+      schema:
+        type: string
+    data_usage_id:
+      name: data_usage_id
+      in: path
+      required: true
+      schema:
+        type: string

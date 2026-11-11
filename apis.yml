@@ -1,0 +1,48 @@
+aid: common-iot-connectivity
+name: IoT Connectivity and SIMs
+type: Common
+description: 'The common IoT Connectivity and SIMs vocabulary, distilled from the harvested OpenAPI of 35 providers
+  in APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common
+  names to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Connectivity
+- IoT Connectivity
+- eSIM
+- SIM
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/iot-connectivity/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-iot-connectivity:iot-connectivity
+  name: Common IoT Connectivity and SIMs Interface
+  description: The IoT Connectivity and SIMs interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/iot-connectivity
+  tags:
+  - Connectivity
+  - IoT Connectivity
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/iot-connectivity/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/iot-connectivity/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/iot-connectivity/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: sim
+    url: https://raw.githubusercontent.com/api-commons/iot-connectivity/main/schema/sim.json
+  - type: JSONSchema
+    name: data_usage
+    url: https://raw.githubusercontent.com/api-commons/iot-connectivity/main/schema/data_usage.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/iot-connectivity/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

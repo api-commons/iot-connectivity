@@ -1,0 +1,26 @@
+provider: airalo
+apis_io: https://apis.io/providers/airalo/
+context: iot-connectivity
+generated: '2026-11-11'
+concepts:
+  sim:
+    path_segment:
+    - sims
+    - esim
+    properties:
+      iccid: iccid
+      id: id
+      imsi: imsis
+      created_at: created_at
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/airalo-partner-api-openapi.yml#GET /v2/sims
+    - openapi/_original/airalo-partner-api-openapi.yml#GET /v2/sims/{sim_iccid}
+    - openapi/_original/airalo-partner-api-openapi.yml#POST /v2/voucher/esim
+  data_usage:
+    path_segment:
+    - usage
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/airalo-partner-api-openapi.yml#GET /v2/sims/{sim_iccid}/usage

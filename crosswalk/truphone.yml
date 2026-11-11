@@ -1,0 +1,17 @@
+provider: truphone
+apis_io: https://apis.io/providers/truphone/
+context: iot-connectivity
+generated: '2026-11-11'
+concepts:
+  sim:
+    path_segment:
+    - sims
+    properties:
+      iccid: iccid
+      status: status
+      name: label
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/truphone-openapi.yml#GET /v2.2/sims
+    - openapi/_original/truphone-openapi.yml#GET /v2.2/sims/{iccid}
+    - openapi/_original/truphone-openapi.yml#PATCH /v2.2/sims/{iccid}

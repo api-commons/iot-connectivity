@@ -1,0 +1,340 @@
+[
+ {
+  "slug": "1nce",
+  "specs": [
+   "openapi/_original/1nce-authorization-openapi.yml",
+   "openapi/_original/1nce-authorization-v2-openapi.yml",
+   "openapi/_original/1nce-order-management-openapi.yml",
+   "openapi/_original/1nce-os-openapi.yml",
+   "openapi/_original/1nce-product-information-openapi.yml",
+   "openapi/_original/1nce-sim-management-openapi.yml",
+   "openapi/_original/1nce-sim-management-v2-openapi.yml",
+   "openapi/_original/1nce-support-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aeris",
+  "specs": [
+   "openapi/_original/aeris-auth-3.0-openapi.yaml",
+   "openapi/_original/aeris-consumer-connectivity-openapi.yaml",
+   "openapi/_original/aeris-mds-esb-device-localization-openapi.yaml",
+   "openapi/_original/aeris-mds-esb-subscription-management-openapi.yaml",
+   "openapi/_original/aeris-subscription-change-history-openapi.yaml",
+   "openapi/_original/aeris-watchtower-api-openapi-openapi.yaml",
+   "openapi/_original/auth-3.0.yaml",
+   "openapi/_original/business-analytics-report-api.yaml",
+   "openapi/_original/business-automation-api.yaml",
+   "openapi/_original/consumer-connectivity.yaml",
+   "openapi/_original/eco-operations-api.yaml",
+   "openapi/_original/eim-info-api.yaml",
+   "openapi/_original/enterprise-management-api.yaml",
+   "openapi/_original/euicc-setup-api.yaml",
+   "openapi/_original/incidents-external-api.yaml",
+   "openapi/_original/mds-esb-device-localization.yaml",
+   "openapi/_original/mds-esb-subscription-management.yaml",
+   "openapi/_original/operator-order-management-api.yaml",
+   "openapi/_original/organization-signaling-aggregations-api.yaml",
+   "openapi/_original/resource-inventory-api.yaml",
+   "openapi/_original/shared-bundle-api.yaml",
+   "openapi/_original/sim-specification-management-api.yaml",
+   "openapi/_original/sms-messaging-api.yaml",
+   "openapi/_original/subscription-change-history.yaml",
+   "openapi/_original/subscription-custom-fields-api.yaml",
+   "openapi/_original/subscription-device-api.yaml",
+   "openapi/_original/subscription-device-reconnect-api.yaml",
+   "openapi/_original/subscription-inventory-common-api.yaml",
+   "openapi/_original/subscription-location-api.yaml",
+   "openapi/_original/subscription-number-management-api.yaml",
+   "openapi/_original/subscription-search-api.yaml",
+   "openapi/_original/subscription-signalling-events-api.yaml",
+   "openapi/_original/subscription-signalling-usages-api.yaml",
+   "openapi/_original/watchtower-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "africastalking",
+  "specs": [
+   "openapi/_original/africastalking-openapi.yml"
+  ]
+ },
+ {
+  "slug": "airalo",
+  "specs": [
+   "openapi/_original/airalo-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-vpn",
+  "specs": [
+   "openapi/_original/amazon-vpn-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amdocs",
+  "specs": [
+   "openapi/_original/amdocs-connectx-openapi.yml"
+  ]
+ },
+ {
+  "slug": "att",
+  "specs": [
+   "openapi/_original/att-enterprise-connectivity-apis.yaml",
+   "openapi/_original/att-network-apis.yaml",
+   "openapi/_original/att-wireless-apis.yaml"
+  ]
+ },
+ {
+  "slug": "blues-wireless",
+  "specs": [
+   "openapi/_original/blues-wireless-notehub-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "booking-com",
+  "specs": [
+   "openapi/_original/booking-com-charges-api-openapi.yml",
+   "openapi/_original/booking-com-connect-api-openapi.yml",
+   "openapi/_original/booking-com-contracting-api-openapi.yml",
+   "openapi/_original/booking-com-demand-api-3-1-openapi.yml",
+   "openapi/_original/booking-com-demand-api-3-2-beta-openapi.yml",
+   "openapi/_original/booking-com-demand-api-3-2-openapi.yml",
+   "openapi/_original/booking-com-facilities-api-openapi.yml",
+   "openapi/_original/booking-com-facilities-api-remote-sync-openapi.yml",
+   "openapi/_original/booking-com-openapi.yml",
+   "openapi/_original/booking-com-payments-api-openapi.yml",
+   "openapi/_original/booking-com-payments-by-booking-onboarding-api-openapi.yml",
+   "openapi/_original/booking-com-property-api-openapi.yml",
+   "openapi/_original/booking-com-reconciliation-api-openapi.yml",
+   "openapi/_original/booking-com-rooms-api-bulk-openapi.yml",
+   "openapi/_original/booking-com-rooms-api-generated-names-openapi.yml",
+   "openapi/_original/booking-com-rooms-api-openapi.yml",
+   "openapi/_original/booking-com-valueadds-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bookingcom",
+  "specs": [
+   "openapi/_original/bookingcom-booking-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cardtonic",
+  "specs": [
+   "openapi/_original/cardtonic-business-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "commscope-holding",
+  "specs": [
+   "openapi/_original/ruckus-one-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "emnify",
+  "specs": [
+   "openapi/_original/emnify-openapi.yml"
+  ]
+ },
+ {
+  "slug": "esimgo",
+  "specs": [
+   "openapi/_original/esimgo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gigsky",
+  "specs": [
+   "openapi/_original/gigsky-openapi.yml"
+  ]
+ },
+ {
+  "slug": "golioth",
+  "specs": [
+   "openapi/_original/golioth-openapi.yml"
+  ]
+ },
+ {
+  "slug": "graphiant",
+  "specs": [
+   "openapi/_original/graphiant-portal-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "gsma",
+  "specs": [
+   "openapi/_original/global-system-for-mobile-communications-application-api-openapi.yml",
+   "openapi/_original/global-system-for-mobile-communications-application-profiles-api-openapi.yml",
+   "openapi/_original/global-system-for-mobile-communications-connectivity-insights-subscriptions-api-openapi.yml",
+   "openapi/_original/global-system-for-mobile-communications-discovery-api-openapi.yml",
+   "openapi/_original/global-system-for-mobile-communications-network-quality-api-openapi.yml",
+   "openapi/_original/global-system-for-mobile-communications-send-sms-api-openapi.yml",
+   "openapi/_original/global-system-for-mobile-communications-traffic-influence-api-read-api-openapi.yml",
+   "openapi/_original/global-system-for-mobile-communications-traffic-influence-api-write-api-openapi.yml",
+   "openapi/_original/gsma-mobile-money-api-openapi.yml",
+   "openapi/_original/gsma-open-gateway-call-forwarding-signal-openapi.yml",
+   "openapi/_original/gsma-open-gateway-carrier-billing-openapi.yml",
+   "openapi/_original/gsma-open-gateway-carrier-billing-refund-openapi.yml",
+   "openapi/_original/gsma-open-gateway-device-identifier-openapi.yml",
+   "openapi/_original/gsma-open-gateway-device-location-retrieval-openapi.yml",
+   "openapi/_original/gsma-open-gateway-device-location-verification-openapi.yml",
+   "openapi/_original/gsma-open-gateway-device-reachability-status-openapi.yml",
+   "openapi/_original/gsma-open-gateway-device-roaming-status-openapi.yml",
+   "openapi/_original/gsma-open-gateway-device-swap-openapi.yml",
+   "openapi/_original/gsma-open-gateway-home-devices-quality-on-demand-openapi.yml",
+   "openapi/_original/gsma-open-gateway-know-your-customer-openapi.yml",
+   "openapi/_original/gsma-open-gateway-number-verification-openapi.yml",
+   "openapi/_original/gsma-open-gateway-otp-validation-openapi.yml",
+   "openapi/_original/gsma-open-gateway-population-density-data-openapi.yml",
+   "openapi/_original/gsma-open-gateway-quality-on-demand-openapi.yml",
+   "openapi/_original/gsma-open-gateway-sim-swap-openapi.yml",
+   "openapi/_original/gsma-open-gateway-simple-edge-discovery-openapi.yml",
+   "openapi/_original/open-gateway-api-product-api-openapi.yml",
+   "openapi/_original/open-gateway-apiproductorder-api-openapi.yml",
+   "openapi/_original/open-gateway-application-api-openapi.yml",
+   "openapi/_original/open-gateway-applicationowner-api-openapi.yml",
+   "openapi/_original/open-gateway-check-subscriber-tenure-api-openapi.yml",
+   "openapi/_original/open-gateway-discovery-api-openapi.yml",
+   "openapi/_original/open-gateway-events-subscription-api-openapi.yml",
+   "openapi/_original/open-gateway-get-device-identifiers-api-openapi.yml",
+   "openapi/_original/open-gateway-monitor-api-openapi.yml",
+   "openapi/_original/open-gateway-notification-listener-api-openapi.yml",
+   "openapi/_original/open-gateway-qos-profiles-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "holidu",
+  "specs": [
+   "openapi/_original/holidu-affiliate-api.json",
+   "openapi/_original/holidu-connectivity-api.json",
+   "openapi/_original/holidu-hapi-with-oauth20.json",
+   "openapi/_original/holidu-security-service-with-client-credentials.json",
+   "openapi/_original/holidu-security-service-with-tokens.json"
+  ]
+ },
+ {
+  "slug": "hologram",
+  "specs": [
+   "openapi/_original/hologram-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hubble-network",
+  "specs": [
+   "openapi/_original/hubble-network-openapi.yml",
+   "openapi/_original/hubble-network-platform-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "kore-wireless",
+  "specs": [
+   "openapi/_original/kore-wireless-api-clients.yml",
+   "openapi/_original/kore-wireless-connectivity-pro.yml",
+   "openapi/_original/kore-wireless-iam.yml",
+   "openapi/_original/kore-wireless-programmable-wireless.yml",
+   "openapi/_original/kore-wireless-sms.yml",
+   "openapi/_original/kore-wireless-supersim.yml",
+   "openapi/_original/kore-wireless-token.yml",
+   "openapi/_original/kore-wireless-webhook.yml"
+  ]
+ },
+ {
+  "slug": "maya-mobile",
+  "specs": [
+   "openapi/_original/maya-mobile-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mobileapi-dev",
+  "specs": [
+   "openapi/_original/mobileapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nextdc",
+  "specs": [
+   "openapi/_original/axon-swagger.json",
+   "openapi/_original/nextdc-axon-openapi.yml"
+  ]
+ },
+ {
+  "slug": "onomondo",
+  "specs": [
+   "openapi/_original/onomondo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "soracom",
+  "specs": [
+   "openapi/_original/soracom-analysis-query-api-openapi.yml",
+   "openapi/_original/soracom-event-handler-api-openapi.yml",
+   "openapi/_original/soracom-harvest-api-openapi.yml",
+   "openapi/_original/soracom-inventory-api-openapi.yml",
+   "openapi/_original/soracom-lorawan-api-openapi.yml",
+   "openapi/_original/soracom-napter-api-openapi.yml",
+   "openapi/_original/soracom-platform-api-openapi.yml",
+   "openapi/_original/soracom-sandbox-api-openapi.yml",
+   "openapi/_original/soracom-sigfox-api-openapi.yml",
+   "openapi/_original/soracom-vpg-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "starlink",
+  "specs": [
+   "openapi/_original/starlink-public-api-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "swisscom",
+  "specs": [
+   "openapi/_original/swisscom-all-in-signing-service-openapi.yml",
+   "openapi/_original/swisscom-sign-integration-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "tata-communications",
+  "specs": [
+   "openapi/_original/tata-communications-mobile-messaging-exchange-account-administration.json",
+   "openapi/_original/tata-communications-mobile-messaging-exchange-cdr-report-api.json",
+   "openapi/_original/tata-communications-number-intelligence-api.json"
+  ]
+ },
+ {
+  "slug": "the-things-network",
+  "specs": [
+   "openapi/_original/the-things-stack-application-server-openapi.yml",
+   "openapi/_original/the-things-stack-end-device-registry-openapi.yml",
+   "openapi/_original/the-things-stack-events-openapi.yml",
+   "openapi/_original/the-things-stack-gateway-server-openapi.yml",
+   "openapi/_original/the-things-stack-identity-server-openapi.yml",
+   "openapi/_original/the-things-stack-integrations-openapi.yml",
+   "openapi/_original/the-things-stack-join-server-openapi.yml",
+   "openapi/_original/the-things-stack-network-server-openapi.yml",
+   "openapi/_original/the-things-stack-packet-broker-agent-openapi.yml"
+  ]
+ },
+ {
+  "slug": "truphone",
+  "specs": [
+   "openapi/_original/truphone-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zayo",
+  "specs": [
+   "openapi/_original/zayo-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "zayo-group",
+  "specs": [
+   "openapi/_original/zayo-group-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zerotier",
+  "specs": [
+   "openapi/_original/zerotier-central-openapi-original.json",
+   "openapi/_original/zerotier-service-openapi-original.json"
+  ]
+ }
+]

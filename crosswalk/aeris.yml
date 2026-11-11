@@ -1,0 +1,24 @@
+provider: aeris
+apis_io: https://apis.io/providers/aeris/
+context: iot-connectivity
+generated: '2026-11-11'
+concepts:
+  sim:
+    path_segment:
+    - sims
+    properties:
+      imsi: imsi
+      msisdn: msisdn
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/subscription-inventory-common-api.yaml#GET /sims
+    - openapi/_original/subscription-inventory-common-api.yaml#GET /sims/{id}
+  data_usage:
+    path_segment:
+    - usages
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/business-analytics-report-api.yaml#GET /usages
+    - openapi/_original/business-analytics-report-api.yaml#GET /usages/{id}

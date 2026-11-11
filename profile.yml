@@ -1,0 +1,250 @@
+context: iot-connectivity
+name: IoT Connectivity and SIMs
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Connectivity
+  - IoT Connectivity
+  - eSIM
+  - SIM
+  - Cellular IoT
+  - Mobile Data
+  - Travel eSIM
+  - MVNO
+  providers_with_harvested_openapi: 35
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  sim:
+    segments_seen:
+      sims: 7
+      esims: 2
+      esim: 1
+      sim: 1
+    providers_exposing: 10
+    providers_with_readable_schema: 10
+    operations:
+    - operation: GET item
+      providers: 10
+      share: 1.0
+      tier: core
+    - operation: GET collection
+      providers: 9
+      share: 0.9
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 0.5
+      tier: core
+    - operation: UPDATE item
+      providers: 4
+      share: 0.4
+      tier: extended
+    - operation: DELETE item
+      providers: 2
+      share: 0.2
+      tier: long-tail
+    - operation: POST item
+      providers: 2
+      share: 0.2
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.2
+      tier: long-tail
+    properties:
+    - name: iccid
+      tier: core
+      providers: 8
+      share: 0.8
+      type: string
+      spellings:
+      - iccid
+    - name: status
+      tier: core
+      providers: 6
+      share: 0.6
+      type: string
+      spellings:
+      - status
+    - name: id
+      tier: core
+      providers: 5
+      share: 0.5
+      type: string
+      spellings:
+      - id
+      - simId
+    - name: imsi
+      tier: core
+      providers: 5
+      share: 0.5
+      type: string
+      spellings:
+      - imsi
+      - imsis
+    - name: created_at
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - activation_date
+      - created_at
+    - name: imei_lock
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: boolean
+      spellings:
+      - imei_lock
+      - imeiLock
+    - name: ip_address
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - ip_address
+      - ipAddress
+    - name: msisdn
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - msisdn
+    - name: name
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - label
+    long_tail_count: 162
+    long_tail_sample:
+    - eid
+    - endpoint
+    - imei
+    - matching_id
+    - operator_id
+    - tags
+    - access_control_class
+    - account_sid
+    - activated
+    - activation_code
+    - active_profile_id
+    - airalo_code
+    - apn_type
+    - apn_value
+    - apns
+    - apple_install_url
+    - arc_session_status
+    - arp_assignment_time
+    - arp_tadig
+    - assigned_date
+    - assigned_imei
+    - brand_settings_name
+    - capabilities
+    - charge_code_for_pp_move
+    - charge_code_non_pp_move
+    - clip
+    - commands_callback_method
+    - commands_callback_url
+    - confirmation_code
+    - connector
+    - consumer_connectivity
+    - cost_breakdown_list
+    - country
+    - created_time
+    - csd
+    - currency
+    - current_imsi
+    - current_quota
+    - current_quota_sms
+    - customer_label
+  data_usage:
+    segments_seen:
+      usage: 5
+      usages: 1
+      sessions: 1
+    providers_exposing: 6
+    providers_with_readable_schema: 6
+    operations:
+    - operation: GET collection
+      providers: 6
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 2
+      share: 0.333
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - id
+      - esim_id
+      - sim_id
+      - simId
+    - name: data_used
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - volume
+      - data_used
+      - bytes
+    long_tail_count: 41
+    long_tail_sample:
+    - status
+    - apn
+    - cell
+    - cost
+    - created_time
+    - currency
+    - data_remaining
+    - date
+    - device_id
+    - dns0
+    - dns1
+    - ended_time
+    - event
+    - expired_at
+    - gateway_private_ip_address
+    - gateway_public_ip_address
+    - image
+    - imei
+    - imsi
+    - is_unlimited
+    - metered_year_month
+    - operator_id
+    - remaining
+    - remaining_text
+    - remaining_voice
+    - session_id
+    - size
+    - started_time
+    - subscription
+    - time
+    - timestamp
+    - total_text
+    - total_voice
+    - traffic_type
+    - ue_ip_address
+    - unit
+    - usage_limit
+    - video
+    - volume_rx
+    - volume_tx

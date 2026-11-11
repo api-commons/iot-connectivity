@@ -1,0 +1,19 @@
+provider: kore-wireless
+apis_io: https://apis.io/providers/kore-wireless/
+context: iot-connectivity
+generated: '2026-11-11'
+concepts:
+  sim:
+    path_segment:
+    - sims
+    properties:
+      iccid: iccid
+      status: status
+      ip_address: ip_address
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/kore-wireless-programmable-wireless.yml#DELETE /v1/Sims/{Sid}
+    - openapi/_original/kore-wireless-programmable-wireless.yml#GET /v1/Sims
+    - openapi/_original/kore-wireless-programmable-wireless.yml#GET /v1/Sims/{Sid}
+    - openapi/_original/kore-wireless-programmable-wireless.yml#POST /v1/Sims/{Sid}
+    - openapi/_original/kore-wireless-supersim.yml#GET /v1/Sims

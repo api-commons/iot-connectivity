@@ -1,0 +1,32 @@
+provider: 1nce
+apis_io: https://apis.io/providers/1nce/
+context: iot-connectivity
+generated: '2026-11-11'
+concepts:
+  sim:
+    path_segment:
+    - sims
+    properties:
+      iccid: iccid
+      status: status
+      imsi: imsi
+      created_at: activation_date
+      imei_lock: imei_lock
+      ip_address: ip_address
+      msisdn: msisdn
+      name: label
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/1nce-sim-management-openapi.yml#GET /v1/sims
+    - openapi/_original/1nce-sim-management-openapi.yml#GET /v1/sims/{iccid}
+    - openapi/_original/1nce-sim-management-openapi.yml#POST /v1/sims
+    - openapi/_original/1nce-sim-management-openapi.yml#PUT /v1/sims/{iccid}
+    - openapi/_original/1nce-sim-management-v2-openapi.yml#GET /v2/sims
+  data_usage:
+    path_segment:
+    - usage
+    properties:
+      data_used: volume
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/1nce-sim-management-openapi.yml#GET /v1/sims/{iccid}/usage

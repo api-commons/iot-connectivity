@@ -24,7 +24,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 ## What the measurement shows
 
 - SIMs agree on iccid, status, id and imsi: the ICCID is the key every connectivity platform shares, because it is printed on the card and burned into the eSIM profile.
-- Data usage agrees on id and data_used; the unit (bytes, MB, KB) is fixed per provider and is not stated in the field.
+- Data usage agrees on id and data_used, at the 6 readable providers that expose it.
 
 ## Artifacts
 
